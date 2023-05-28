@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="pages/index.css" rel="stylesheet">
+    <title>Магазин мебели ReHome</title>
+</head>
+<body class="common">
+<div class="wrapper">
+    <header class="header">
+        <img alt="ReHome" class="header__logo img" src="images/icon-logo.svg"/>
+        <nav class="header__nav ">
+            <ul class="header__nav-list nav__list">
+                <li class="header__nav-item nav__item">
+                    <button class="header__nav-button nav__button nav__button_type_armchairs button"
+                            id="products_header_armchairs" type="button">
+                        Кресла
+                    </button>
+                </li>
+                <li class="header__nav-item nav__item">
+                    <button class="header__nav-button nav__button nav__button_type_tables button"
+                            id="products_header_tables" type="button">Столы
+                    </button>
+                </li>
+                <li class="header__nav-item nav__item">
+                    <button class="header__nav-button nav__button nav__button_type_dressers button"
+                            id="products_header_dressers" type="button">Комоды
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <button class="header__mode bg-img button"></button>
+    </header>
+    <main class="main">
+        <section>
+            <div class="info">
+                <h1 class="info__title">ReHome</h1>
+                <div class="info__img-wrapper">
+                    <img alt="" class="info__img img" src="images/room.png">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="products products_type_best">
+                <h2 class="products__title">Лучшие предложения</h2>
+                <ul class="products__container">
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="products products_type_armchairs products_hidden">
+                <h2 class="products__title">Кресла</h2>
+                <ul class="products__container">
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="products products_type_tables products_hidden">
+                <h2 class="products__title">Столы</h2>
+                <ul class="products__container">
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="products products_type_dressers products_hidden">
+                <h2 class="products__title">Комоды</h2>
+                <ul class="products__container">
+                </ul>
+            </div>
+        </section>
+        <button class="button-up button-up_hidden button bg-img" type="button">
+        </button>
+    </main>
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav-list nav__list">
+                <li class="nav__item">
+                    <button class="footer__nav-button nav__button nav__button_type_armchairs button"
+                            id="products_footer_armchairs" type="button">
+                        Кресла
+                    </button>
+                </li>
+                <li class="nav__item">
+                    <button class="footer__nav-button nav__button nav__button_type_tables button"
+                            id="products_footer_tables" type="button">Столы
+                    </button>
+                </li>
+                <li class="nav__item">
+                    <button class="footer__nav-button nav__button nav__button_type_dressers button"
+                            id="products_footer_dressers" type="button">Комоды
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <div class="popup popup_type_buy">
+        <div class="popup__container">
+            <button aria-label="Закрыть" class="popup__close button bg-img"></button>
+            <form action="#" class="popup__form" name="popup-form">
+                <fieldset class="popup__fieldset">
+                    <h4></h4>
+                    <label class="popup__input-header" for="quantity">Количество<input
+                            class="popup__input"
+                            id="quantity"
+                            min="0"
+                            name="quantity"
+                            placeholder="Введите количество"
+                            required
+                            type="number"></label>
+                    <div class="popup__radio-wrapper">
+                        <p class="popup__input-header">Цвет фурнитуры</p>
+                        <label for="color-black"><input
+                                checked
+                                class="popup__radio"
+                                id="color-black"
+                                name="color"
+                                type="radio" value="black"> Черная</label>
+                        <label for="color-white"><input
+                                class="popup__radio"
+                                id="color-white"
+                                name="color"
+                                type="radio"
+                                value="white"> Белая</label>
+                        <label for="color-gold"><input
+                                class="popup__radio"
+                                id="color-gold"
+                                name="color"
+                                type="radio"
+                                value="gold"> Золотая</label>
+                        <label for="color-silver"><input
+                                class="popup__radio"
+                                id="color-silver"
+                                name="color"
+                                type="radio"
+                                value="silver"> Серебряная</label>
+                    </div>
+                    <label class="popup__input-header" for="comment">Комментарий к заказу<textarea
+                            class="popup__textarea"
+                            id="comment"
+                            maxlength="2000"
+                            name="comment"
+                            placeholder="Ваш комментарий..."
+                    ></textarea></label>
+                    <button class="popup__button button" type="submit" value="Submit">Купить</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="popup popup_type_confirmation">
+        <div class="popup__container">
+            <h2 class="popup__header">Спасибо за покупку!</h2>
+        </div>
+    </div>
+    <template class="card-template">
+        <li class="card">
+            <div class="card__img-wrapper">
+                <img alt="" class="card__img img" src="">
+            </div>
+            <div class="card__info">
+                <p class="card__date">Date</p>
+                <h2 class="card__title"></h2>
+                <button class="card__button button">Купить</button>
+            </div>
+        </li>
+    </template>
+</div>
+<script src="scripts/data.js"></script>
+<script src="scripts/Card.js"></script>
+<script src="scripts/Popup.js"></script>
+<script src="scripts/Up.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>

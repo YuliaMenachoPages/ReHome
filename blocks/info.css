@@ -1,0 +1,28 @@
+.info {
+    width: 100%;
+}
+
+.info__title {
+    text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+    .info {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/room.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 22px;
+
+    }
+
+    .info__img-wrapper {
+        display: none;
+    }
+}

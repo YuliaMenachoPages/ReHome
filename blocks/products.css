@@ -1,0 +1,27 @@
+.products {
+    display: block;
+    margin: 0;
+    padding: 0;
+    min-height: 40vh;
+}
+
+.products_hidden {
+    display: none;
+}
+
+.products__container {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, 260px);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+}
+
+.products__title {
+    color: #518581;
+}

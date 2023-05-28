@@ -1,0 +1,19 @@
+@import url('../vendor/normalize.css');
+@import url('https://stijndv.com/fonts/Eudoxus-Sans.css');
+
+@import url('../blocks/button.css');
+@import url('../blocks/nav.css');
+@import url('../blocks/img.css');
+@import url('../blocks/bg-img.css');
+
+@import url('../blocks/common.css');
+@import url('../blocks/wrapper.css');
+@import url('../blocks/header.css');
+@import url('../blocks/main.css');
+@import url('../blocks/info.css');
+@import url('../blocks/products.css');
+@import url('../blocks/card.css');
+@import url('../blocks/footer.css');
+@import url('../blocks/popup.css');
+@import url('../blocks/button-up.css');
+

@@ -1,0 +1,19 @@
+.footer {
+    padding: 0;
+    margin: 20px auto 20px auto;
+    box-sizing: border-box;
+    width: 90%;
+    border-top: 1px solid rgba(175, 173, 181, 0.5);
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.footer__nav-button {
+    color: #AFADB5;
+}

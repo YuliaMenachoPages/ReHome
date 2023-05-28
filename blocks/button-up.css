@@ -1,0 +1,29 @@
+.button-up {
+    display: flex;
+    position: fixed;
+    background-color: #518581;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+}
+
+.button-up::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: transparent no-repeat center center url("../images/icon-up.png");
+    background-size: contain;
+}
+
+.button-up_hidden {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .button-up {
+        right: calc(50vw - 630px);
+    }
+}

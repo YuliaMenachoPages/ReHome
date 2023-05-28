@@ -1,0 +1,22 @@
+.common {
+    font-family: "Eudoxus-Sans", Arial, sans-serif;
+    background-color: #F9F9F9;
+    color: #26261e;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    min-width: 320px;
+    max-width: 1280px;
+    box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+
+.common_mode_dark {
+    background-color: #26261e;
+    color: #F9F9F9;
+}

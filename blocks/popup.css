@@ -1,0 +1,126 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(38, 38, 30, 0.3);
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+    flex-direction: column;
+}
+
+.popup_opened {
+    display: flex;
+}
+
+.popup__container {
+    margin: 0 auto;
+    width: 380px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.popup__container_mode_dark {
+    background: black;
+}
+
+.popup__close {
+    background-image: url("../images/close-black.svg");
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    transition: opasity 0.5s;
+    cursor: pointer;
+}
+
+.popup__close_mode_dark {
+    background-image: url("../images/close-white.svg");
+}
+
+.popup__close:hover {
+    opacity: 0.6;
+}
+
+.popup__fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.popup__radio-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.popup__radio {
+    margin: 5px 0;
+}
+
+.popup__input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.popup__textarea {
+    width: 100%;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.popup__textarea_mode_dark {
+    background-color: #518581;
+}
+
+.popup__button {
+    width: 100%;
+    height: 46px;
+    background-color: #26261e;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+.popup__input-header {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+@media screen and (max-width: 425px) {
+    .popup__container {
+        width: 280px;
+    }
+
+    .popup__close {
+        top: -36px;
+        right: 0;
+    }
+}
